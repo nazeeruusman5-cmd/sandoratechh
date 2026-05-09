@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandora - Digital Agency</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="images/logo.png" type="image/png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body">
+  <!-- Header -->
+  <header class="header">
+    <a class="logo-cont" href="index.html">
+      <img class="im1" src="images/logo.png" alt="Sandora Logo" />
+      <span class="l1"><strong>Sandora</strong></span>
+    </a>
+    
+    <nav class="menu-box">
+      <a href="#explore" class="menu-1">Services</a>
+      <a href="#process" class="menu-1">Process</a>
+      <a href="#project" class="menu-1">Project</a>
+      <a href="#about" class="menu-1">About</a>
+      <button class="signup-btn"><strong>Get Started</strong></button>
+    </nav>
+
+    <button class="ham-menu" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Overlays -->
+  <div class="over-lays"></div>
+  <div class="over-lay"></div>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu-box" aria-hidden="true">
+      <a href="index.html">Home</a>
+    <a href="index.html#explore">Services</a>
+    <a href="#process">Process</a>
+    <a href="#project">Project</a>
+    <a href="#about">About</a>
+    <a href="#about">Contact Us</a>
+    <button class="mobile-signup-btn"><strong>Get Started</strong></button>
+  </nav>
+
+   <!-- Signup Modal -->
+  <div class="signup-page">
+    <button class="close-menu" aria-label="Close modal">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <form class="input" action="mailto:sandoratech01@gmail.com" method="post" enctype="text/plain">
+      <div class="top-cont">
+        <h2 id="signup-title" class="signup-h1"><strong>Start a <span class="p-highlight">Project</span></strong></h2>
+        <div class="divider">
+          <p class="text">Let's build something amazing together. Fill out this form below and I'll get back to you within 24 hours.</p>
+        </div>
+      </div>
+          
+      <div class="input-group">
+        <input class="float-input" type="text" id="fullName" placeholder=" " required />
+        <label for="fullName">Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input class="float-input" type="email" id="email" placeholder=" " required />
+        <label for="email">Email Address</label>
+      </div>
+
+      <div class="input-group">
+        <select class="float-select" id="budget" required>
+          <option value="" disabled selected></option>
+          <option value="50000">₦50,000</option>
+          <option value="100000">₦100,000</option>
+          <option value="150000">₦150,000</option>
+          <option value="200000">₦200,000</option>
+        </select>
+        <label for="budget">Select your budget range</label>
+      </div>
+
+      <div class="input-group">
+        <textarea class="float-textarea" id="description" rows="2" placeholder=" " required></textarea>
+        <label for="description">Tell me about your project...</label>
+      </div>
+      
+      <button type="submit" class="signup-button"><span class="sign">Submit</span></button>
+    </form>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="con-1">
+    <div class="con-2">
+      <div class="heading-box">
+        <div class="badge">
+          <span class="dot"></span>
+          Future-Focused Agency
+        </div>
+        <h1 class="h1"><strong>Building Digital <span class="highlight-1">Experiences</span> That Scale</strong></h1>
+      </div>
+
+      <div class="pg-box">
+        <p class="san">We design and develop high-performance websites, mobile apps and web applications for modern businesses ready to innovate.</p>
+      </div>
+      
+      <div class="btn-con">
+        <button class="btn-1">Get a Quote</button>
+        <a href="#project"  class="link"><button  class="btn-2">View Our Work</button></a> 
+      </div>
+      
+      <div class="prf-rating-container">
+        <img class="prf-icon" src="images/profilepic.jpeg" alt="Client 1" />
+        <img class="prf-icon1" src="images/profilepic2.png" alt="Client 2" />
+        <img class="prf-icon2" src="images/profilepic3.png" alt="Client 3" />
+        <p class="prf-label">Trusted By 2000+ Companies</p>
+      </div>
+    </div>
+    
+    <div class="img-con">
+      <img class="home-img" src="images/homeBG.png" alt="Digital workspace" />
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <span id="explore"></span>
+  <section class="work-cnt">
+    <p class="wrk-heading">Our Experiences</p>
+    <h2 class="wrk-heading2"><strong>Everything you need to scale</strong></h2>
+    <p class="prgh-1">We bring in design and technology to create seamless digital solutions that drive results.</p>
+    
+    <div class="service-cont1">
+      <article class="service-card1">
+        <div class="webicon-cont">
+          <img class="website-icon" src="images/websiteicon.png" alt="Web Development Icon" />
+        </div>
+        <h3 class="h2">Web Development</h3>
+        <p class="card-info">Custom websites built with modern frameworks like React, Vue, and Next.js for blazing performance.</p>
+      </article>
+
+      <article class="service-card1">
+        <div class="mobileicon-cont">
+          <img class="mobile-icon" src="images/mobileappicon.png" alt="Mobile App Icon" />
+        </div>
+        <h3 class="h3">Mobile App Development</h3>
+        <p class="card-info">Native and cross-platform mobile applications for iOS and Android that users love.</p>
+      </article>
+
+      <article class="service-card1">
+        <div class="webapp-icon-cont">
+          <img class="webapp-icon" src="images/webappicon.png" alt="Web App Icon" />
+        </div>
+        <h3 class="h4">Web Applications</h3>
+        <p class="card-info">Complex, data-driven web applications designed to streamline your business operations.</p>
+      </article>
+    </div>
+<br />
+<br/>
+    <div class="service-cont2">
+      <article class="service-card1">
+        <div class="ui-ux-icon-cont">
+          <img class="ui-ux-icon" src="images/Ui&Ux.png" alt="UI/UX Design Icon" />
+        </div>
+        <h3 class="h5">UI/UX Design</h3>
+        <p class="card-info">User-centric design that balances aesthetics with functionality to create intuitive interfaces.</p>
+      </article>
+
+      <article class="service-card1">
+        <div class="backend-icon-cont">
+          <img class="backend-icon" src="images/Api&backend.png" alt="API & Backend Icon" />
+        </div>
+        <h3 class="h6">API & Backend</h3>
+        <p class="card-info">Robust and scalable backend architectures to power your applications securely.</p>
+      </article>
+
+      <article class="service-card1">
+        <div class="digitalstrategy-icon-cont">
+          <img class="dstrategy-icon" src="images/digitalstrategy.png" alt="Digital Strategy Icon" />
+        </div>
+        <h3 class="hh1">Digital Strategy</h3>
+        <p class="card-info">Data-driven insights and strategic planning to position your product for market success.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <span id="process"></span>
+  <section class="work-process-cont">
+    <p class="wrk-process-heading">How We Work</p>
+    <h2 class="wrk-process-heading2"><strong>From Concept to Launch</strong></h2>
+
+    <div class="center-line"></div>
+
+    <div class="process-cont">
+      <article class="process-card">
+        <div class="img-container">
+          <img class="discovery-icon" src="images/discovery.png" alt="Discovery Phase" />
+        </div>
+        <div>
+          <h3 class="process-card-h1">Discovery</h3>
+          <p class="process-card-prgh">We dive deep into your business goals, user needs and market landscape.</p>
+        </div>
+      </article>
+
+      <article class="process-card">
+        <div class="img-container">
+          <img class="design-icon" src="images/design.png" alt="Design Phase" />
+        </div>
+        <div>
+          <h3 class="process-card-h1">Strategy & Design</h3>
+          <p class="process-card-prgh">We craft the blueprint and design intuitive interfaces that engage users.</p>
+        </div>
+      </article>
+
+      <article class="process-card">
+        <div class="img-container">
+          <img class="development-icon" src="images/code.png" alt="Development Phase" />
+        </div>
+        <div>
+          <h3 class="process-card-h1">Development</h3>
+          <p class="process-card-prgh">Our engineers build robust, scalable solutions using clean code practices.</p>
+        </div>
+      </article>
+
+      <article class="process-card">
+        <div class="img-container">
+          <img class="launch-icon" src="images/launch.png" alt="Launch Phase" />
+        </div>
+        <div>
+  <p class="process-card-h1">Launch & Support</p>
+ <p class="process-card-prgh">We deploy your product and provide ongoing support to ensure success.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="items-cont">
+    <div class="process-cont2">
+      <h2 class="process-card-heading">Why leading companies choose Sandora</h2>
+      <p class="first-prgh">We don't just build software, we build digital assets that become the backbone of your business growth.</p>
+
+      <article class="process-card2">
+        <h3 class="process-card-h2">Agile Workflow</h3>
+        <p class="process-card-prgh2">Rapid iteration and constant feedback loops to ensure we're always aligned with your vision.</p>
+      </article>
+
+      <article class="process-card2">
+        <h3 class="process-card-h2">Scalable Architecture</h3>
+        <p class="process-card-prgh2">Built to handle growth from day one, ensuring your platform performs as you expand.</p>
+      </article>
+
+      <article class="process-card2">
+        <h3 class="process-card-h2">Clean, Maintainable Code</h3>
+        <p class="process-card-prgh2">High-quality code standards that make future updates and maintenance effortless.</p>
+      </article>
+
+      <article class="process-card2">
+        <h3 class="process-card-h2">Fast Turnaround Time</h3>
+        <p class="process-card-prgh2">Efficient processes that get your product to market faster without compromising quality.</p>
+      </article>
+    </div>
+
+    <img class="end-img" src="images/secondBG.jpeg" alt="Team collaboration" />
+  </section>
+  
+  <!-- project section -->
+<span id="project"></span>
+<!-- project section -->
+<span id="project"></span>
+<section class="project-cont" aria-label="Company Projects">
+
+  <p class="project-heading">Our Work</p>
+  <p class="project-heading2"><strong>We Deliver With Precision</strong></p>
+
+  <div class="slider-wrapper">
+    <button class="nav-btn prev-btn" aria-label="Previous project">
+      <i class="fa-solid fa-angle-left"></i>
+    </button>
+
+    <div class="slider-container">
+      <div class="slider" id="projectSlider">
+
+        <div class="slide">
+          <div class="iframe-wrapper">
+            <iframe src="https://smartlearner01.netlify.app" loading="lazy" title="Smart Learner Project"></iframe>
+          </div>
+          <div class="caption">
+            <p class="heading-hh3">Project Name :<span class="p1"> Smart Learner</span></p>
+            <p class="p-label">Project Description</p>
+            <p class="p">Smart Learner is a modern online learning platform designed to make education simple, interactive, and accessible. It helps students learn smarter through engaging tools and a user-friendly experience, anytime and anywhere.</p>
+            <p class="p-label2">Display</p>
+            <p class="pp">Responsive</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="iframe-wrapper">
+            <iframe src="https://vtuapp01.netlify.app" loading="lazy" title="VTU App Project"></iframe>
+          </div>
+          <div class="caption">
+            <p class="heading-hh3">Project Name :<span class="p1"> VTU App</span></p>
+            <p class="p-label">Project Description</p>
+            <p class="p">VTU App is a fast and reliable digital platform that makes airtime purchase, data subscriptions, and bill payments simple and secure. Designed with a user-friendly interface, it provides convenient virtual top-up services anytime and anywhere.</p>
+            <p class="p-label2">Display</p>
+            <p class="pp">Responsive</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="iframe-wrapper">
+            <iframe src="https://Ozystore01.netlify.app" loading="lazy" title="Ozy Store Project"></iframe>
+          </div>
+          <div class="caption">
+            <p class="heading-hh3">Project Name :<span class="p1"> Ozy Store</span></p>
+            <p class="p-label">Project Description</p>
+            <p class="p">OzyStore is a modern online shopping management system, built for convenience and simplicity. It offers a smooth user experience with easy navigation, quality products, and a clean design that makes browsing and shopping fast, secure, and stress-free.</p>
+            <p class="p-label2">Display</p>
+            <p class="pp">Desktop</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="iframe-wrapper">
+            <iframe src="https://supermarketpos01.netlify.app" loading="lazy" title="Supermarket POS Project"></iframe>
+          </div>
+          <div class="caption">
+            <p class="heading-hh3">Project Name :<span class="p1"> Supermarket POS Management System</span></p>
+            <p class="p-label">Project Description</p>
+            <p class="p">SupermarketPOS is a modern web-based point-of-sale system built for supermarkets and retail stores. It helps businesses manage sales, track inventory, process transactions, and streamline daily operations with speed, accuracy, and efficiency.</p>
+            <p class="p-label2">Display</p>
+            <p class="pp">Desktop</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="iframe-wrapper">
+            <iframe src="https://officemanagementsystem01.netlify.app" loading="lazy" title="Office Management System Project"></iframe>
+          </div>
+          <div class="caption">
+            <p class="heading-hh3">Project Name :<span class="p1"> Office Management System</span></p>
+            <p class="p-label">Project Description</p>
+            <p class="p">Office Management System is a simple and efficient platform for managing office tasks like staff records, documents, and workflows in one place. It helps improve organization, productivity, and team coordination.</p>
+            <p class="p-label2">Display</p>
+            <p class="pp">Desktop</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="iframe-wrapper">
+            <iframe src="https://pointofsale01.netlify.app" loading="lazy" title="Point of Sale System Project"></iframe>
+          </div>
+          <div class="caption">
+            <p class="heading-hh3">Project Name :<span class="p1"> Point of Sale (POS) System</span></p>
+            <p class="p-label">Project Description</p>
+            <p class="p">Point of Sale (POS) System is a web-based application designed to manage sales, inventory, and transactions in one place. It allows businesses to process payments, track products, and monitor daily sales easily.</p>
+            <p class="p-label2">Display</p>
+            <p class="pp">Desktop</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="nav-btn next-btn" aria-label="Next project">
+      <i class="fa-solid fa-angle-right"></i>
+    </button>
+  </div>
+
+  <!-- Dot indicators -->
+  <div class="dots-nav" id="projectDots"></div>
+
+</section>
+  <!-- Stats Section -->
+  <section class="stat-cont" aria-label="Company Statistics">
+    <div>
+      <p class="stat-h1">150+</p>
+      <p class="stat-prgh">Projects Delivered</p>
+    </div>
+    <div>
+      <p class="stat-h1">50+</p>
+      <p class="stat-prgh">Happy Clients</p>
+    </div>
+    <div>
+      <p class="stat-h1">5+</p>
+      <p class="stat-prgh">Years of Experience</p>
+    </div>
+    <div>
+      <p class="stat-h1">98%</p>
+      <p class="stat-prgh">Client Satisfaction</p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="review-cont">
+    <h2 class="review-h1">Trusted by Innovators</h2>
+    <p class="review-prgh">Don't just take our word for it, here's what our clients have to say.</p>
+
+    <div class="main-rating-card-cont">
+      <article class="rating-card">
+        <img class="rating-img" src="images/rating.png" alt="5 star rating" />
+        <blockquote class="rating-text">"Sandora delivered a robust platform that scaled effortlessly with our user base. Their attention to detail is unmatched."</blockquote>
+        <p class="clients-name"><strong>Michael Chen</strong></p>
+      </article>
+
+      <article class="rating-card">
+        <img class="rating-img" src="images/rating.png" alt="5 star rating" />
+        <blockquote class="rating-text">"The UI/UX design completely transformed our product. Engagement increased by 40% in the first month of launch."</blockquote>
+        <p class="clients-name"><strong>Elena Rodriguez</strong></p>
+      </article>
+
+      <article class="rating-card">
+        <img class="rating-img" src="images/rating.png" alt="5 star rating" />
+        <blockquote class="rating-text">"Professional, responsive and incredible interface. They felt like an extension of our external team throughout the project."</blockquote>
+        <p class="clients-name"><strong>James Wilson</strong></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <span id="about"></span>
+  <section class="action-cont">
+    <h2 class="action-h1">Let's Build Something Exceptional Together</h2>
+    <div class="scale">
+      <p class="action-prgh">Ready to transform your digital presence? Get in touch and let's discuss how we can help you scale.</p>
+    </div>
+    <div class="button-container">
+      <button class="action-btn1">Start Your Project</button>
+      <button onclick="window.location.href='tel:08078896076'" class="action-btn2">Call Us</button>
+    </div>
+  </section>
+   <!-- Terms and Conditions section -->
+  <div class="terms-overlay" id="termsOverlay"></div>
+  <div class="terms-cont" id="termsCont">
+    <div class="terms-header">
+      <button class="navv-btn" aria-label="Go back">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <h1 class="terms-h1">TERMS & CONDITIONS</h1>
+    </div>
+    <div class="line"></div>
+    <p class="h1-prgh">By using Sandora's website or services, you agree to the following terms:</p>
+    
+    <div class="terms-body">
+      <p><strong>1. Use of Services</strong><br>
+      You agree to use our services only for lawful purposes and in a way that does not harm our platform or other users.</p>
+      
+      <p><strong>2. Services Provided</strong><br>
+      Sandora offers IT services, software development, digital solutions, and online platforms. We reserve the right to modify or discontinue services at any time.</p>
+      
+      <p><strong>3. User Responsibilities</strong><br>
+      You are responsible for the accuracy of information you provide and for maintaining the confidentiality of your account.</p>
+      
+      <p><strong>4. Payments</strong><br>
+      All payments for services must be made as agreed. Failure to pay may result in service suspension or termination.</p>
+      
+      <p><strong>5. Intellectual Property</strong><br>
+      All content, designs, and materials provided by Sandora remain our intellectual property unless otherwise agreed.</p>
+      
+      <p><strong>6. Limitation of Liability</strong><br>
+      Sandora is not liable for any indirect or unforeseen damages arising from the use of our services.</p>
+      
+      <p><strong>7. Termination</strong><br>
+      We reserve the right to suspend or terminate access to our services if users violate these terms.</p>
+      
+      <p><strong>8. Changes to Terms</strong><br>
+      We may update these terms at any time. Continued use of our services means you accept the updated terms.</p>
+      
+      <p><strong>9. Governing Law</strong><br>
+      These terms are governed by the laws of Nigeria.</p>
+    </div>
+  </div>
+
+  <!-- Privacy Policy Section -->
+  <div class="policy-overlay" id="policyOverlay"></div>
+  <div class="policy-cont" id="policyCont">
+    <div class="policy-header">
+      <button class="navi-btn" aria-label="Go back">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <h1 class="terms-h1">PRIVACY POLICY</h1>
+    </div>
+    <div class="line"></div>
+    <p class="h1-prgh">At Sandora Technology Limited, we value your privacy and are committed to protecting your personal information.</p>
+    
+    <div class="policy-body">
+      <p><strong>1. Information We Collect</strong><br>
+      We may collect basic information such as your name, email address, phone number, and usage data when you interact with our website or services.</p>
+      
+      <p><strong>2. How We Use Your Information</strong><br>
+      We use your information to: Provide and improve our services, communicate with you, process requests and transactions, enhance user experience.</p>
+      
+      <p><strong>3. Data Protection</strong><br>
+      We implement appropriate security measures to protect your data from unauthorized access, loss, or misuse.</p>
+      
+      <p><strong>4. Sharing of Information</strong><br>
+      We do not sell or rent your personal information. We may share data with trusted partners only when necessary to deliver our services.</p>
+      
+      <p><strong>5. Cookies</strong><br>
+      Our website may use cookies to improve user experience and analyze site traffic.</p>
+      
+      <p><strong>6. Your Rights</strong><br>
+      You have the right to access, update, or request deletion of your personal data.</p>
+      
+      <p><strong>7. Changes to This Policy</strong><br>
+      We may update this Privacy Policy from time to time. Updates will be posted on this page.</p>
+      
+      <p><strong>8. Contact Us</strong><br>
+      For any questions, contact us at:<br>
+      Email: sandoratech01@gmail.com</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bottom">
+    <div class="footer-links">
+      <div>
+        <div class="footer-top">
+          <img src="images/logo.png" alt="Sandora Logo" class="logo">
+          <p class="tech"><strong>SANDORA</strong></p>
+        </div>
+        <div class="handle-icons-cont">
+            <i class="fa-brands fa-linkedin"><a href="#" class=""></a></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+        <p class="footer-top-prgh">We design and develop high-performance digital experiences for forward-thinking companies.</p>
+      </div>
+
+      <div>
+        <p class="heading"><strong>Legal</strong></p>
+        <button class="terms-btn">Terms & Conditions</button>
+        <br />
+        <button class="policy-btn" >Privacy Policy</button>
+      </div>
+
+      <div>
+        <p class="heading"><strong>Services</strong></p>
+        <a href="index.html">Websites</a>
+        <a href="#">Mobile App</a>
+        <a href="#">API Integration</a>
+        <a href="#">Domain</a>
+      </div>
+
+      <div class="newsletter">
+        <p class="heading"><strong>Stay Updated</strong></p>
+        <p class="newsletter-prgh">Subscribe to our newsletter for the latest tech insights.</p>
+        <form>
+          <input type="email" placeholder="Enter your email" aria-label="Email for newsletter" />
+          <button type="submit"><span>Subscribe</span></button>
+        </form>
+      </div>
+    </div>
+<div class="footer-end-cont">
+<p class="address"><i class="fa-solid fa-location-dot"></i> 1500 N Grant ST, Denver,CO 80208</p>
+        <p class="footer-end-txt">Copyright @2026 , Sandora limited. All Rights Reserved....</p>
+</div>
+  </footer>
+
+  <script>
+    // DOM Elements
+    const signupBtn = document.querySelector('.signup-btn');
+    const signupPage = document.querySelector('.signup-page');
+    const overlay = document.querySelector('.over-lay');
+    const body = document.querySelector('body');
+    const hamMenu = document.querySelector('.ham-menu');
+    const mobileMenuBox = document.querySelector('.mobile-menu-box');
+    const overlayMobile = document.querySelector('.over-lays');
+    const closeMenu = document.querySelector('.close-menu');
+    const mobileSignupBtn = document.querySelector('.mobile-signup-btn');
+    const btn1 = document.querySelector('.btn-1');
+    const actionBtn1 = document.querySelector('.action-btn1');
+    
+
+        // TERMS & CONDITIONS, PRIVACY POLICY
+    const termsBtn = document.querySelector('.terms-btn');
+    const termsCont = document.querySelector('.terms-cont');
+    const termsOverlay = document.querySelector('.terms-overlay');
+    const navvBtn = document.querySelector('.navv-btn');
+    
+    const policyBtn = document.querySelector('.policy-btn');
+    const policyCont = document.querySelector('.policy-cont');
+    const policyOverlay = document.querySelector('.policy-overlay');
+    const naviBtn = document.querySelector('.navi-btn');
+
+    const openTerms = () => { 
+      termsCont.classList.add('active');
+      termsOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeTerms = () => {
+      termsCont.classList.remove('active');
+      termsOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    const openPolicy = () => { 
+      policyCont.classList.add('active');
+      policyOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closePolicy = () => {
+      policyCont.classList.remove('active');
+      policyOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    termsBtn.addEventListener('click', openTerms);
+    policyBtn.addEventListener('click', openPolicy);
+    navvBtn.addEventListener('click', closeTerms);
+    naviBtn.addEventListener('click', closePolicy);
+    
+    // Close on overlay click
+    termsOverlay.addEventListener('click', closeTerms);
+    policyOverlay.addEventListener('click', closePolicy);
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeTerms();
+        closePolicy();
+        closeSignup();
+        closeMobileMenu();
+      }
+    });
+   
+    
+
+    // Helper functions
+    const lockScroll = () => body.classList.add('no-scroll');
+    const unlockScroll = () => body.classList.remove('no-scroll');
+    const openSignup = () => {
+      signupPage.classList.add('active');
+      overlay.classList.add('active');
+      lockScroll();
+    };
+
+
+
+    const closeSignup = () => {
+      signupPage.classList.remove('active');
+      overlay.classList.remove('active');
+      unlockScroll();
+    };
+    const toggleMobileMenu = () => {
+      hamMenu.classList.toggle('active');
+      mobileMenuBox.classList.toggle('active');
+      overlayMobile.classList.toggle('active');
+      body.classList.toggle('no-scroll');
+    };
+    const closeMobileMenu = () => {
+      hamMenu.classList.remove('active');
+      mobileMenuBox.classList.remove('active');
+      overlayMobile.classList.remove('active');
+      unlockScroll();
+    };
+
+    // Event Listeners
+
+const mobileLinks = document.querySelectorAll('.mobile-menu-box a');
+
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeMobileMenu();
+  });
+});
+
+    signupBtn.addEventListener('click', openSignup);
+    mobileSignupBtn.addEventListener('click', () =>{
+    openSignup();
+    closeMobileMenu();
+    });
+
+    actionBtn1.addEventListener('click', () =>{
+    openSignup();
+    closeMobileMenu();
+    });
+
+    overlay.addEventListener('click', () => {
+      closeSignup();
+      closeMobileMenu();
+    });
+    overlayMobile.addEventListener('click', closeMobileMenu);
+    hamMenu.addEventListener('click', toggleMobileMenu);
+    closeMenu.addEventListener('click', () => {
+      closeSignup();
+      closeMobileMenu();
+    });
+    btn1.addEventListener('click', ()=>{
+        openSignup();
+    });
+ 
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeSignup();
+        closeMobileMenu();
+      }
+    });
+
+    // Terms on 
+   
+    
+(function() {
+  const slider = document.getElementById('projectSlider');
+  const slides = slider.querySelectorAll('.slide');
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+  const dotsContainer = document.getElementById('projectDots');
+  
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+  let autoSlideInterval;
+  const isDesktop = () => window.innerWidth >= 1024;
+
+  // Create dots
+  function createDots() {
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.classList.add('dot');
+      dot.setAttribute('aria-label', `Go to project ${i + 1}`);
+      dot.addEventListener('click', () => {
+        goToSlide(i);
+        resetAutoSlide();
+      });
+      dotsContainer.appendChild(dot);
+    }
+    updateDots();
+  }
+
+  function updateDots() {
+    const dots = dotsContainer.querySelectorAll('.dot');
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentIndex);
+    });
+  }
+
+  function updateButtons() {
+    if (prevBtn && nextBtn) {
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex === totalSlides - 1;
+    }
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    if (currentIndex < 0) currentIndex = totalSlides - 1;
+    if (currentIndex >= totalSlides) currentIndex = 0;
+    
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    updateDots();
+    updateButtons();
+  }
+
+  function nextSlide() {
+    goToSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    goToSlide(currentIndex - 1);
+  }
+
+  function startAutoSlide() {
+    if (isDesktop()) {
+      autoSlideInterval = setInterval(nextSlide, 6000);
+    }
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  function resetAutoSlide() {
+    stopAutoSlide();
+    startAutoSlide();
+  }
+
+  // Button click handlers
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      resetAutoSlide();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetAutoSlide();
+    });
+  }
+
+  // Touch / Swipe support for mobile
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  slider.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  slider.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, { passive: true });
+
+  function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = touchStartX - touchEndX;
+    
+    if (Math.abs(diff) > swipeThreshold) {
+      if (diff > 0) {
+        // Swiped left -> next
+        nextSlide();
+      } else {
+        // Swiped right -> prev
+        prevSlide();
+      }
+      resetAutoSlide();
+    }
+  }
+
+  // Pause auto-slide when hovering slider (desktop)
+  slider.addEventListener('mouseenter', stopAutoSlide);
+  slider.addEventListener('mouseleave', startAutoSlide);
+
+  // Handle resize (restart auto-slide if moving to desktop)
+  window.addEventListener('resize', () => {
+    stopAutoSlide();
+    startAutoSlide();
+  });
+
+  // Initialize
+  createDots();
+  updateButtons();
+  startAutoSlide();
+})();
+  </script>
+</body>
+</html>
